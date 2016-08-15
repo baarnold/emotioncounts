@@ -1,0 +1,21 @@
+$studentEmotionScore = 0;
+
+function addScore($questionResponse){
+	if ($questionResponse == 'never'){
+		$studentEmotionScore += 0;
+	} else if ($questionResponse == 'rarely'){
+		$studentEmotionScore += 1;
+	} else if ($questionResponse == 'sometimes'){
+		$studentEmotionScore += 2;
+	} else if ($questionResponse == 'often'){
+		$studentEmotionScore += 3;		
+	} else if ($questionResponse == 'always'){
+		$studentEmotionScore += 4;	
+	} else {
+		echo 'Error calculating value of ' . $questionResponse;
+	}
+}
+
+function newScore(){
+	$studentEmotionScore = 0;
+}

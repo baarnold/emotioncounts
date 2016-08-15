@@ -1,0 +1,317 @@
+/*simple css for centering text and other things on the page*/
+.centering{
+  text-align: center;
+}
+
+/*Results Table */
+#resultsTable {
+	font-size: 10px;
+}
+
+
+/*modal-content and close are for styling the modal login*/
+.modal-content{
+  background-color: #fefefe;
+  width: 95%;
+}
+
+/* The Close Button (x) */
+.close {
+    position: relative;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+
+
+/*Body*/
+body {
+	font-family: 'Oxygen', sans-serif;
+}
+.mainBody {
+	background-color: white;
+
+}
+
+.img-responsive {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*Header*/
+#navContainer {
+	background-color: #FD5B1F;
+}
+
+#bs-example-navbar-collapse-1 {
+	font-size: 1.3em;
+}
+
+ul li a:hover {
+	text-decoration: underline;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #eae7d4;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: #fcf8e3;
+	text-decoration: underline;
+}
+
+/*Index Page*/
+p.indexInfo {
+	font-size: 1.5em;
+}
+
+.panel-info>.panel-heading {
+	color: #d9edf7;
+    background-image: linear-gradient(to bottom,#337ab7 0,#337ab7 100%);
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+   
+}
+
+footer {
+	background-color: #0F6C00;
+	height: 40px;
+	margin-top: 20px;
+}
+
+footer > div.text-center {
+	margin-top: 10px;
+}
+
+.foot a {
+	color: white;
+	padding-top: 20px;
+}
+.foot a:hover {
+	color: green;
+	text-decoration: underline;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
+
+/*Survey Questions*/
+
+
+label > input{ /* HIDE RADIO */
+  visibility: hidden; /* Makes input not-clickable */
+  position: absolute; /* Remove input from document flow */
+}
+label > input + img{ /* IMAGE STYLES */
+  cursor:pointer;
+  border:2px solid transparent;
+}
+label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+  border:2px solid #002080;
+  background-color:  #3366ff
+}
+
+/*used to disable the button*/
+.rightButtonClosed {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #0000FF;
+  opacity: .8;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.rightButtonClosed span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.rightButtonClosed span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.rightButtonClosed:hover span {
+  padding-right: 25px;
+}
+
+.rightButtonClosed:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/*the rightButton class items used to style our next button*/
+
+.rightButton{
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #1EDE00;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+
+.rightButton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.rightButton span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.rightButton:hover span {
+  padding-right: 25px;
+}
+
+.rightButton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* Previous button animation*/
+
+.arrowLeft {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #0000FF;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.arrowLeft span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+/*The brackets that are used are called guillemets*/
+
+.arrowLeft span:before {
+  content: '«';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -20px;
+  transition: 0.5s;
+}
+
+.arrowLeft:hover span {
+  padding-left: 25px;
+}
+
+.arrowLeft:hover span:before {
+  opacity: 1;
+  left: 0;
+}
+
+.question {
+	margin-top: 5%;
+	margin-bottom: 2%;
+}
+
+.faces {
+	margin-top: 2%;
+	margin-bottom: 5%;
+}
+
+.error {
+	color: red;
+	font-weight: 600;
+}
+.prevNext {
+	margin-top: 2%;
+	margin-bottom: 5%;
+}
+
+img {
+	margin-top:2%;
+}
+
+/* Results Page */
+.table-bordered {
+	width: 90%;
+}
+.table-bordered th{
+	text-align:center;
+	padding: 1%;
+}
+.table-bordered tr{
+	padding: 1%;
+	text-align:left;
+	
+}
+
+.table-bordered td{
+	padding: 0 1%;
+}
+.table-bordered td .success {
+	background-color:#d0e9c6;
+}
+.table-bordered td .danger {
+	background-color:#ebcccc;
+}
+.table-bordered td .warning {
+	background-color:#ffa500;
+}
+
+.print {
+	margin:2%;
+}
